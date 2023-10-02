@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Music Player</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <script src="script.js"></script>
+    <div id="music-player">
+        <img src="musicimage.jpg" alt="Music Cover">
+        <div id="music-controls">
+            <span id="play-pause-button" onclick="togglePlayPause()">▶️</span>
+            <span id="volume-down" onclick="decreaseVolume()">🔉</span>
+            <input type="range" id="volume-slider" min="0" max="100" value="50" oninput="setVolume(this.value)">
+            <span id="volume-up" onclick="increaseVolume()">🔊</span>
+        </div>
+        <div id="search-container">
+            <input type="text" id="song-search" placeholder="Search for a song">
+            <button onclick="searchAndPlay()">Search</button>
+        </div>
+        <!-- YouTube iframe player container -->
+        <div id="player"></div>
+    </div>
+
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="https://www.youtube.com/watch?v=yokY5tE6uPY"></script>
+</body>
+
+</html>
+

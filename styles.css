@@ -1,0 +1,56 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+#music-player {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+}
+
+#music-player img {
+    width: 100%;
+    height: auto;
+}
+
+#music-controls {
+    padding: 16px;
+    text-align: center;
+}
+
+#play-pause-button,
+#volume-control {
+    display: inline-block;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+#volume-slider {
+    width: 80%;
+    margin-top: 10px;
+}
+
+#search-container {
+    padding: 16px;
+    text-align: center;
+}
+
+#song-search {
+    width: 60%;
+    padding: 8px;
+    margin-right: 8px;
+}
+
+button {
+    padding: 8px;
+    cursor: pointer;
+}
